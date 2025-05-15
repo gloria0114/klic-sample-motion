@@ -13,12 +13,13 @@ $(document).ready(function () {
         scrollingSpeed: 1000,
         css3: true,
         scrollOverflow: true,
-        scrollOverflowReset: true,
-        normalScrollElements: '.scroll'
+        autoScrolling: true
     });
 
     $('.top').on('click', function (e) {
-		e.preventDefault();
-		$.fn.fullpage.moveTo(1);
-	});
+      e.preventDefault();
+      $.fn.fullpage.moveTo(1);
+    });
+
+    fullpage_api.reBuild();
 })
