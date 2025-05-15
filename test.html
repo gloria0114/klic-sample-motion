@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullpage Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+  <style>
+    .section {
+      text-align: center;
+      font-size: 3em;
+    }
+    .card_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+  </style>
+</head>
+<body>
+
+<div id="fullpage">
+  <div class="section">Section 1</div>
+  <div class="section"><ul class="card_list">
+    <li><a href="#a"><img src="images/TemB/card_01.png" alt=""></a></li>
+    <li><a href="#a"><img src="images/TemB/card_02.png" alt=""></a></li>
+    <li><a href="#a"><img src="images/TemB/card_03.png" alt=""></a></li>
+    <li><a href="#a"><img src="images/TemB/card_01.png" alt=""></a></li>
+    <li><a href="#a"><img src="images/TemB/card_02.png" alt=""></a></li>
+    <li><a href="#a"><img src="images/TemB/card_03.png" alt=""></a></li>
+</ul></div>
+  <div class="section">Section 3</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+<script>
+  new fullpage('#fullpage', {
+    autoScrolling: true,
+    navigation: true,
+    anchors: ['first', 'second', 'third'],
+    scrollOverflow: true,
+    scrollOverflowReset: true
+  });
+</script>
+
+</body>
+</html>

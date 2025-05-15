@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'cafe24Moyamoya';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Cafe24Moyamoya-Regular-v1.0.woff2) format('woff2'),
+        url(Cafe24Moyamoya-Regular-v1.0.woff) format('woff');
+}

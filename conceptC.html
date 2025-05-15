@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>시연</title>
+<link rel="stylesheet" href="css/basic.css" media="all">
+<link rel="stylesheet" href="css/common.css" media="all">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="loading">
+        <div> <span></span> <span></span> <span></span></div>
+    </div>
+
+    <div id="container" class="mainWrap bg_color concept">
+        <!-- 웹 시안만 있을 경우 mainWrap에 onlyWeb class 추가 -->
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png"></a></h1>
+        </header>
+
+        <div class="container concept">
+            <!-- 내용 -->
+            <div class="titWrap">
+                <h2><strong>C안</strong><span>영문</span></h2>
+                <a href="TemB_1.html" class="btnLink"><span>시안 바로가기</span></a>
+            </div>
+            <div class="contWrap">
+                <div class="keyword">
+                    <h3><span>KEYWORD</span></h3>
+                    <ul>
+                        <li>#</li>
+                        <li>#</li>
+                        <li>#</li>
+                    </ul>
+                </div>
+                <div class="color">
+                    <h3><span>COLOR</span></h3>
+                    <div class="palette">
+                        <div class="color01" style="background-color:#"></div>
+                        <div class="color02" style="background-color:#"></div>
+                        <div class="color03" style="background-color:#"></div>
+                    </div>
+                </div>
+                <div class="device">
+                    <h3><span>DEVICE</span></h3>
+                    <div class="imgBox">
+                        <div class="imgMob"><img src="images/TemB/mobileC.png" alt=""></div>
+                        <div class="imgTab"><img src="images/TemB/tabletC.png" alt=""></div>
+                        <div class="imgWeb"><img src="images/TemB/webC.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 내용 -->
+        </div>
+
+        <a href="#" class="btnTop"><span><i class="xi-angle-up-min"></i><em>TOP</em></span></a>
+    </div>
+
+<!-- nav -->
+<nav >
+    <div class="btnWrap container">
+        <a href="index.html" class="homeBtn"><span><em>메인 화면</em></span></a>
+        <a href="nav.html" class="menuBtn"><span><em>메뉴보기</em></span></a>
+    </div>
+</nav>
+
+<script>
+    $(function() {
+        $(window).ready(function () {
+            $('.loading').delay(300).fadeOut();
+        });
+
+        window.setTimeout(function() {
+            $('.concept').addClass('active');
+        }, 300);
+    });
+    </script>
+</body>
+</html>

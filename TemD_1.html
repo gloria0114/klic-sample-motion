@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>시연</title>
+<link rel="stylesheet" href="css/basic.css" media="all">
+<link rel="stylesheet" href="css/common.css" media="all">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="container" class="webWrap bg_blue">
+        <div class="container">
+            <!-- 화면 1920 이하일 경우 -->
+            <div class="img1920 onlyImg">
+                <img src="images/TemD_1.jpg" alt="">
+            </div>
+            <!-- 화면 1920 이상일 경우 -->
+            <div class="img2560 onlyImg">
+                <img src="images/TemD_1_2560.jpg" alt="">
+            </div>
+        </div>
+        <a href="#" class="btnTop"><span><i class="xi-angle-up-min"></i><em>TOP</em></span></a>
+    </div>
+
+
+<!-- nav -->
+<nav>
+    <div class="btnWrap container">
+        <a href="index.html" class="homeBtn"><span><em>메인 화면</em></span></a>
+        <a href="nav.html" class="menuBtn"><span><em>메뉴보기</em></span></a>
+        <a href="TemD_1.html" class="webBtn"><span><em>웹</em></span></a>
+    </div>
+</nav>
+
+<script>
+    $(function() {
+        window.setTimeout(function() {
+            $('.concept').addClass('active');
+        }, 300);
+    });
+    </script>
+</body>
+</html>
