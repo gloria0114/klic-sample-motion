@@ -140,7 +140,7 @@ section .tit {margin-top:13rem;}
 /* FOOTER */
 footer {position: relative;background:#212734;text-align: center;padding-bottom: 70px;}
 footer p {margin:0 auto;}
-footer .top_btn {position: absolute; right: -5rem;top: 2rem;}
+footer .top_btn {position: absolute; right: 50px;top: 63px;}
 
 .banner_wrap {height: 90px;background:#fff;}
 

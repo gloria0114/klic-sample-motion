@@ -18,8 +18,9 @@ $(document).ready(function () {
 
     $('.top').on('click', function (e) {
       e.preventDefault();
-      $.fn.fullpage.moveTo(1);
+      const scrollable = document.querySelector('.fp-section.active .fp-scrollable');
+      if (scrollable) scrollable.scrollTop = 0
+        fullpage_api.moveTo(1);
     });
 
-    fullpage_api.reBuild();
 })
